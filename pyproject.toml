@@ -1,0 +1,25 @@
+[project]
+name = "crpresso-web"
+version = "0.1.0"
+description = "CRISPResso2 分析 Web 平台（Flask 后端 + Vue3/NaiveUI 前端）"
+requires-python = ">=3.11"
+dependencies = [
+    "flask>=3.0",
+    "pandas>=2.2",
+    "openpyxl>=3.1",
+    "loguru>=0.7",
+    "biopython>=1.84",
+    "cryptography>=50.0.1",
+    "peewee>=4.5.1",
+]
+
+[tool.uv]
+package = false
+
+[[tool.uv.index]]
+url = "https://mirrors.cloud.tencent.com/pypi/simple"
+default = true
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
